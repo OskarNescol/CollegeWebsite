@@ -24,7 +24,10 @@
       </div>
     </header>
     <!-- Overview section split into column with images -->
-    <section id="overview" class="hero">
+    <div class="trailer">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/c0i88t0Kacs?si=c52_coMuexvfIrsU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+      <section id="overview" class="hero">
       <div class="container padding">
         <article class="container padding">
           <h2 class="sectionTitle">Overview</h2>
@@ -167,10 +170,13 @@
       <img class="logo" src="img/witcher3logo.png" alt="Logo" />
       <nav>
         <p><strong>Sign up for our newsletter!</strong></p>
-        <p>Name:</p>
-        <input type="text" />
-        <p>Email:</p>
-        <input type="text" />
+        <form action="/action_page.php" method="get">
+          <label for="fname">Email:</label>
+          <input type="text" id="fname" name="fname"><br><br>
+          <label for="lname">Name:</label>
+          <input type="text" id="lname" name="lname"><br><br>
+          <input type="submit" value="Submit">
+        </form>
       </nav>
     </div>
   </body>
